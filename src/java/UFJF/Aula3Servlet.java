@@ -28,16 +28,7 @@ public class Aula3Servlet extends HttpServlet {
 
             if (usu.equals(usuario)) {
                 if (psw.equals(senha)) {
-                    out.println("<!DOCTYPE html>");
-                    out.println("<html>");
-                    out.println("<head>");
-                    out.println("<title>Exercícios Aula 2 - DCC192</title>");
-                    out.println("</head>");
-                    out.println("<body>");
-                    out.println("<h1>Exercícios Aula 2 - DCC192 </h1>");
-                    out.println("<h1>Logado com sucesso!</h1>");
-                    out.println("</body>");
-                    out.println("</html>");
+                    response.sendRedirect("menu.html");
                 }
             } else {
                 out.println("<!DOCTYPE html>");
@@ -47,7 +38,6 @@ public class Aula3Servlet extends HttpServlet {
                 out.println("</head>");
                 out.println("<body>");
                 out.println("<h1>Usuário ou senha Inválido</h1>");
-                out.println("<h1>Logado com sucesso!</h1>");
                 out.println("</body>");
                 out.println("</html>");
 
