@@ -44,6 +44,7 @@ public class Aula2Servlet extends HttpServlet {
                     out.println("</html>");
                 }
             } else {
+                
                 out.println("<!DOCTYPE html>");
                 out.println("<html>");
                 out.println("<head>");
